@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Vue Example</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+
+  <!-- Header Template -->
+  <header id="appHeader" class="d-none">
+    <nav>
+      <ul>
+        <li v-for='menuName in menu'>
+            <a href="menuName.url"><i class="fas" v-bind:class="[menuName.icon]"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Header Template -->
+
+  <section class="w-100 h-100" id="loginContainer">
+      <div class="w-100 h-100 d-table animated fadeOut delay-1s loginBlock">
+        <div class="w-100 h-100 d-table-cell align-middle text-center logo-block">
+          <img src="img/logo.png" alt="LOGO" />
+        </div>
+      </div>
+      <div class="w-100 h-100 d-table animated fadeIn delay-1s loginBlock loginFormBlock">
+        <div class="w-100 h-100 d-table-cell align-middle text-center logo-block">
+          <!-- Default form login -->
+          <form class="w-100 mx-auto text-center z-depth-2 border border-light p-5">
+              <img src="img/logo.png" alt="LOGO" class="mb-4" />
+              <!-- Email -->
+              <div class="md-form">
+                  <i class="fa fa-envelope prefix left-0"></i>
+                  <input type="text" id="loginEmail" class="form-control">
+                  <label for="loginEmail">E-mail address</label>
+              </div>
+              <!-- Password -->
+              <div class="md-form">
+                  <i class="fa fa-lock prefix left-0"></i>
+                  <input type="password" id="loginPassword" class="form-control">
+                  <label for="loginPassword">Password</label>
+              </div>
+
+              <div class="d-flex justify-content-around">
+                  <div>
+                      <!-- Forgot password -->
+                      <a href="">Forgot password?</a>
+                  </div>
+              </div>
+
+              <!-- Sign in button -->
+              <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+              <!-- Register -->
+              <p>Not a member?<a href="" class="ml-2">Register</a></p>
+
+          </form>
+          <!-- Default form login -->
+        </div>
+      </div>
+  </section>
+
+  <!-- /Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Vue JS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- Custom JS -->
+  <script type="text/javascript" src="js/common.vue.js"></script>
+</body>
+
+</html>
